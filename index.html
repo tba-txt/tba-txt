@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt -br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-icon-96x96.png" type="image/x-icon">
+    <title>login</title>
+    <link rel="stylesheet" href="tela_login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            
+            <img src="silhueta_goku.png" alt="">
+        </div>
+        <div class="rigth-login">
+            <div class="card-login">
+                <h1>login</h1>
+                <div id="msgerror">  </div>
+                <div class="texfild">
+                   <label  id="userLabel" for="usuario">usuario</label>
+                   <input type="text" name="usuario" placeholder="digite seu usuario" id="usuario">
+                </div>
+                <div class="texfild">
+                    <label  id="senhaLabel"  for="senha">senha</label>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <input type="password" name="senha" placeholder="digite sua senha" id="senha">
+                 </div>
+                 <button onclick="entrar()" class="btn-login">login</button>
+                 
+                 <p> não tem uma conta ?</p>
+                 <a href="tela_cadastro.html"> cadastrar-se</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="login.js"  type="text/javascript"></script>
+</body>
+</html>

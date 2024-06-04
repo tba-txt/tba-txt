@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="apple-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <script async src="loja.js"></script>
+    <script src="loja.js"></script>
+    <style>
+      h4 {
+  color: #FE7F01;
+         }
+      .card.product-card {
+          background-color: #00000056;
+          color: #FFF;
+          border: 2px solid #FE7F01; 
+          border-radius: 5px; 
+      }
+      .custom-input {
+          background-color: #FE7F01;
+          border: 2px solid #FE7F01;
+          color: #000;
+          border-radius: 5px; 
+      }
+  </style>
+    <title>Legendary Store</title>
+  </head> 
+
+  <body style="background-color: #201B2C;">
+
+  <!--navbar-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg" style="background-color:  #2f2841; height: 80px; border-radius: 100px; border: 2px solid #ffa500;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/quemsomos.html">
+              <img src="oigoku.png" alt="Logo da Loja" class="img-fluid" width="250" height="150">
+            </a>
+            <h4 class="text-center">LegendaryStore</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+ 
+  
+      
+      <!--todos os cards-->
+      <div class="row">
+        <div class="col-12">
+          `<div class="row">
+            <div class="col-12">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="banner1.png" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="banner2.png" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="banner3.png" alt=" terceiro Slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
+                </div>
+          </div>`
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card product-card mt-5">
+                    <form>
+                        <img src="Design sem nome (1).png" class="card-img-top" alt="Produto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Action Figure - Kakaroto</h5>
+                            <p class="card-text">Transforme sua estante em uma arena de batalha com a Action Figure de Goku!</p>
+                            <p class="card-text mt-2"><strong>Preço: R$ 75,99</strong></p>
+                            <div class="input-group">
+                                <input type="number" id="quantidadeItem1" class="form-control" min="1" value="1" required style="background-color:  #FFC107; width: 20px;">
+                                <div class="input-group-append">
+                                    <a href="#" onclick="adicionarAoCarrinho('Action Figure - Kakaroto', 75.99, document.getElementById('quantidadeItem1').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card product-card mt-5">
+                    <form>
+                        <img src="Design sem nome (2).png" class="card-img-top" alt="Produto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Luminária personalizada - Gohan SSJ2 x Perfect Cell</h5>
+                            <p class="card-text">Ilumine sua casa com a fúria de um super sayajin 2!</p>
+                            <p class="card-text"><strong>Preço: R$ 210,50</strong></p>
+                            <div class="input-group" style="width: auto;">
+                                <input type="number" id="quantidadeItem2" class="form-control" min="1" value="1" required style="background-color: #FFC107; width: 30px;">
+                                <div class="input-group-append">
+                                    <a href="#" onclick="adicionarAoCarrinho('Luminária personalizada - Gohan SSJ2 x Perfect Cell', 210.50, document.getElementById('quantidadeItem2').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card product-card mt-5">
+                    <form>
+                        <img src="Design sem nome (3).png" class="card-img-top" alt="Produto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit 7 Esferas do Dragão</h5>
+                            <p class="card-text">As 7 esferas podem realizar qualquer desejo, a não ser que o seu desejo seja de desconto.</p>
+                            <p class="card-text"><strong>Preço: R$ 40,99</strong></p>
+                            <div class="input-group" style="width: auto;">
+                                <input type="number" id="quantidadeItem3" class="form-control" min="1" value="1" required style="background-color: #FFC107; width: 30px;">
+                                <div class="input-group-append">
+                                    <a href="#" onclick="adicionarAoCarrinho('Kit 7 Esferas do Dragão', 40.99, document.getElementById('quantidadeItem3').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+      <div class="col-4">
+          <div class="card product-card mt-5">
+              <img src="Design sem nome (4).png" class="card-img-top" alt="Produto 1">
+              <div class="card-body">
+                  <h5 class="card-title">Action Figure - Broly SSJ</h5>
+                  <p class="card-text">Tenha em sua coleção a força imensurável do verdadeiro lendário super sayajin Broly!</p>
+                  <p class="card-text"><strong>Preço: R$ 105,00</strong></p>
+                  <div class="input-group" style="width: auto;">
+                      <input type="number" id="quantidadeItem4" class="form-control" min="1" value="1" required style="background-color: #FFC107; width: 50px;">
+                      <div class="input-group-append">
+                          <a href="#" onclick="adicionarAoCarrinho('Action Figure - Broly SSJ', 105.00, document.getElementById('quantidadeItem4').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card product-card mt-5">
+              <img src="Design sem nome (5).png" class="card-img-top" alt="Produto 2">
+              <div class="card-body">
+                  <h5 class="card-title">Capa para celular Mirai Trunks</h5>
+                  <p class="card-text">Proteja seu celular com capas vibrantes inspiradas nos guerreiros Z! </p>
+                  <p class="card-text"><strong>Preço: R$ 17,94</strong></p>
+                  <div class="input-group" style="width: auto;">
+                      <input type="number" id="quantidadeItem5" class="form-control" min="1" value="1" required style="background-color: #FFC107; width: 50px;">
+                      <div class="input-group-append">
+                          <a href="#" onclick="adicionarAoCarrinho('Capa para celular Mirai Trunks', 17.94, document.getElementById('quantidadeItem5').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card product-card mt-5">
+              <img src="Design sem nome (6).png" class="card-img-top" alt="Produto 3">
+              <div class="card-body">
+                  <h5 class="card-title">Camiseta personalizada - Gohan</h5>
+                  <p class="card-text">Orgulho e conforto combinados juntos. Eleve o seu conforto a outro nível!</p>
+                  <p class="card-text"><strong>Preço: R$ 31,99</strong></p>
+                  <div class="input-group" style="width: auto;">
+                      <input type="number" id="quantidadeItem6" class="form-control" min="1" value="1" required style="background-color: #FFC107; width: 50px;">
+                      <div class="input-group-append">
+                          <a href="#" onclick="adicionarAoCarrinho('Camiseta personalizada - Gohan', 31.99, document.getElementById('quantidadeItem6').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+  <div class="row">
+    <div class="col-4">
+        <div class="card product-card mt-5">
+            <img src="Design sem nome (7).png" class="card-img-top" alt="Produto 1">
+            <div class="card-body">
+                <h5 class="card-title">Caneca - Bulma</h5>
+                <p class="card-text">Comece o seu dia de forma inteligente! Canecas perfeitas dos guerreiros Z!</p>
+                <p class="card-text"><strong>Preço: R$ 25,00</strong></p>
+                <div class="input-group" style="width: auto;">
+                    <input type="number" id="quantidadeItem7" class="form-control" min="1" value="1" required style="background-color: #FFC107; width: 50px;">
+                    <div class="input-group-append">
+                        <a href="#" onclick="adicionarAoCarrinho('Caneca - Bulma', 25.00, document.getElementById('quantidadeItem7').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card product-card mt-5">
+            <img src="Design sem nome (8).png" class="card-img-top" alt="Produto 2">
+            <div class="card-body">
+                <h5 class="card-title">Mangá - Torneio do Poder</h5>
+                <p class="card-text">Explore todas as aventuras dos guerreios Z! Mangás originais e lacrados.</p>
+                <p class="card-text"><strong>Preço: R$ 65,20</strong></p>
+                <div class="input-group" style="width: auto;">
+                    <input type="number" id="quantidadeItem8" class="form-control" min="1" value="1" required style="background-color: #FFC107; width: 50px;">
+                    <div class="input-group-append">
+                        <a href="#" onclick="adicionarAoCarrinho('Mangá - Torneio do Poder', 65.20, document.getElementById('quantidadeItem8').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card product-card mt-5">
+            <img src="Design sem nome (9).png" class="card-img-top" alt="Produto 3">
+            <div class="card-body">
+                <h5 class="card-title">Poster - Goku SSJ x Final Freeza</h5>
+                <p class="card-text">Transforme as paredes de seu quarto com essas batalhas lendárias!</p>
+                <p class="card-text"><strong>Preço: R$ 149,99</strong></p>
+                <div class="input-group" style="width: auto;">
+                    <input type="number" id="quantidadeItem9" class="form-control" min="1" value="1" required style="background-color: #FFC107; width: 50px;">
+                    <div class="input-group-append">
+                        <a href="#" onclick="adicionarAoCarrinho('Poster - Goku SSJ x Final Freeza', 149.99, document.getElementById('quantidadeItem9').value)" class="btn btn-warning ml-2">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      
+<!-- fim dos cards -->
+
+
+
+<!-- Tabela de itens do nosso carrinho -->
+<div class="container mt-5">
+  <table id="carrinho" class="table text-white">
+      <thead>
+          <tr>
+              <th> </th>
+              <th> </th>
+              <th> </th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+          <tr>
+              <td><strong>Total (R$):</strong></td>
+              <td id="total">R$ 0.00</td>
+              <td>
+                  <button onclick="limparCarrinho()" class="btn btn-danger">Limpar Carrinho</button>
+                  <button data-toggle="modal" data-target="#pagamentoModal" class="btn btn-success">Seguir para o pagamento</button>
+              </td>
+          </tr>
+      </tfoot>
+  </table>
+</div>
+
+
+<div class="modal fade" id="pagamentoModal" tabindex="-1" aria-labelledby="pagamentoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="pagamentoModalLabel">Escolha o Método de Pagamento</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="form-group">
+                  <label for="metodoPagamento">Método de Pagamento</label>
+                  <select class="form-control" id="metodoPagamento" onchange="mostrarFormularioPagamento()">
+                      <option value="">Selecione a Melhor Forma de Pagamento Para Você!</option>
+                      <option value="credito">Cartão de Crédito</option>
+                      <option value="debito">Cartão de Débito</option>
+                      <option value="pix">PIX</option>
+                  </select>
+              </div>
+              <div id="formularioPagamento"></div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-warning" onclick="finalizarPagamento()">Finalizar Pagamento</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="loja.js"></script>
+  </body>
+</html>

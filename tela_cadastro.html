@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-icon-96x96.png" type="image/x-icon">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="tela_cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="main-cadastro">
+        <div class="center-cadastro"> 
+            <h1> cadastrar </h1>
+            <div class="card-text">
+                <div class="text-cadastro">
+                    <label id="label-nome" for="nome">nome</label>
+                    <input type="text" name="nome" placeholder="coloque seu nome aqui" id="nome" >
+                </div>
+                <div class="text-cadastro">
+                    <label id="label-usuario" for="email">usuario</label>
+                    <input type="text" name="usuario" placeholder="coloque seu usuario" id="usuario" >
+                </div>
+                <div class="text-cadastro">
+                    <label id="label-senha" for="nome">senha</label>
+                    <i id="versenha" class="fa fa-eye" aria-hidden="true"></i>
+                    <input id="senha" type="password" name="senha" placeholder="coloque sua senha aqui"  >
+                </div>
+                <div class="text-cadastro">
+                    <label id="label-confimsenha" for="nome">confirmar senha</label>
+                    <i id="verconfirmesenha" class="fa fa-eye" aria-hidden="true"></i>
+                    <input id="confsenha" type="password" name="senha" placeholder="coloque sua senha aqui"  >
+                </div>
+                <button onclick="cadastrar()" class="btn-cadastro">salvar</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
